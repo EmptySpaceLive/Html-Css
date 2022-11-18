@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+h1{
+    height: 200px;
+    width: 200px;
+    background-color: #990033;
+    color: #FF9000;
+
+    border-width: 10px;
+    border-style: solid;
+    border-color:#5F021F;
+    /* Shorthand */
+    border: 10px solid #5F021F;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    /* Shorthand */
+    padding: 10px;/* Resume a uma medida quando todas são iguais*/
+
+
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    /* Shorthand */
+    margin: 10px 20px; /* resume quando 2 medidas paralelas são iguais*/
+    /* margin:auto; centraliza a caixa */
+
+    outline-width: 5px;
+    outline-style: double;
+    outline-color: invert;
+    /* Shorthand */
+    outline: 5px double invert;
+
+}
+
+a{
+    height: 200px;
+    width: 200px;
+    background-color: #fcfcfc;
+    color: #030303;
+
+    border-width: 3px;
+    border-style: solid;
+    border-color:#5F021F;
+}

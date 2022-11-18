@@ -1,0 +1,68 @@
+@charset "UTF-8"; /* comando para usar os cacteres em portugue */
+
+*{  /* Configurações Globais*/
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to left,#506266, #818274);
+    /*
+    Medidas Absolutas
+    cm, mm, in, px, pt, pc 
+    
+    Medidas Relativas
+    em, ex, rem, vw ,vh %
+
+    16px geralmente = 1em 
+
+    in = 1 polegada
+
+    Recomendação
+    
+    Usar px e em.
+
+    */
+
+    font-size: 1em;
+    font-weight: normal;
+    /*lighter - normal - bold - bolder*/
+    font-style: italic;
+    text-decoration: underline;
+}
+
+main{
+    background-color: #f0f0f04f;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #10454f2a; /* 5px p baix,5 p lado,5 de espalhamento*/
+    width: 600px;
+    padding: 15px;/*cria acochoamento ( margem )*/
+    margin: auto;/*centraliza automaticamente*/
+    height: auto;/*corrigir bug com o height caso height global 100% */
+}
+
+h1{
+    text-align: center;
+    color: #10454F;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
+    /* 
+    Shorthand font
+    Ordem:
+    font-style -> font-weight -> font-size -> font-family
+
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    font-style: italic;
+    */
+    font: italic bold 3em 'sans-serif'; /*shorthand*/
+}
+
+h2{
+    color: #BDE038;
+    
+}
+
+p {
+    text-align: justify;
+}

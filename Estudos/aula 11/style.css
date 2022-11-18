@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+    font: normal 16px Arial;
+    background-color: gainsboro;
+}
+h1 {
+    font-weight: normal;
+    color: rgb(20, 131, 131);
+}
+
+h2 {
+    color: rgb(192, 114, 114);
+}
+
+/*
+    EM HTML É ID    = EM CSS É #
+    EM HRML É CLASS = EM CSS É .
+*/
+#principal{
+    text-align: center;
+    background-color: rgb(211, 194, 174);
+}
+.pagTop {
+    text-align: right;
+}
+
+.basic {
+    color: rgb(139, 192, 114);
+}
+
+.medium {
+    color: rgb(192, 171, 114);
+}
+
+.advance {
+    color: rgb(192, 114, 114);
+}
+
+.destaque{
+    background-color: rgba(127, 255, 212, 0.479);
+}

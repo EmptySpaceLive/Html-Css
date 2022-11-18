@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
+        }
+
+        div > p{ /* simbolo > usado para falar que esta dentro da div (CHILD)*/
+            display: none;
+        }
+        div:hover > p{ /* simbolo : usado para criar uma pseudo-class (SITUAÇÂO)*/
+            display: block;
+            color: #ffe4c4;
+            background-color: #00adad;
+            width: 200px;
+        }
+        div:hover{
+            color: #a52a2a;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Learning Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+
+    <div>
+        ?????
+        <p>Segredo descoberto!!!</p>
+    </div>
+    
+</body>
+</html>

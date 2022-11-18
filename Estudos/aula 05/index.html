@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos difetentes
+        ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+
+    <picture>
+        <!-- a ordem dos source é importante caso fora nao funciona-->
+        <!-- ajustar o max-width ate desaparecer a barra de roagem lateral-->
+        <!-- necessario o type=image/png, caso contrario nao funciona-->
+        <source media="(max-width: 770px)" srcset="imagens/pessoas-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/pessoas-m.png" type="image/png">
+        <img src="imagens/pessoas-g.png" alt="foto fundo flexivel">
+        <!-- Funciona da mesma forma com o min-width mais começando com a menor imagem-->
+        <!-- mudando a imagem dinamicamente DA MAIOR PARA MENOS 
+        faz diferença a ordem!-->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <h2>Vamos aprender a areproduzir áudios em HTML5.</h2>
+    <!-- parametro autoplay dentro da tag audio nao funciona em todos os browsers-->
+    <!-- formats MP3 WAV OGG-->
+    <h2>Musica Hospedado localmente</h2>
+    <audio src="audio/cocktail-hour.mp3" controls preload="metadata"></audio> 
+
+    
+
+    <h2>Podcast</h2>
+    <!-- forma de compatibilidade com varios navegadores-->
+    <audio preload="metadata" controls> <!-- outra forma, que vai fazer a tentativa em cada formato caso erro -->
+        <source src="audio/guanacast-33.mp3" type="audio/mpeg"><!-- 1º tentativa com formato mp3-->
+        <source src="audio/cocktail-hour.ogg" type="audio/ogg"><!-- 2º tentativa com formato ogg-->
+        <source src="audio/cocktail-hour.wav" type="audio/wav"><!-- 3º tentativa com formato wav-->
+        <P>Infelizmente seu navegador não consegue reproduzir</P><!-- 4º tentativa - mensagem erro-->
+    </audio>
+    <!-- parametro preload cuidado para usar o auto pois ele vai carregar todo o arquivo de audio junto
+    com a pag,-->
+    
+    <h1>Reproduzindo Video</h1>
+    <h2>Hospedados localmente</h2>
+    <!-- forma de compatibilidade com varios navegadores-->
+    <video width="560" poster="imagens/Inserir um título.png" controls><!-- poster é a capa -->
+        <source src="video/Video-Chuva.m4v" type="video/mp4"><!-- 1º tentativa, ideal e mais leve-->
+        <source src="video/Video-Chuva.webm" type="video/webm"><!--2º tentativa,caso incompativel com 1º-->
+        <source src="video/video-chuva.mp4" type="video/mp4"><!-- 3º tentativa-->
+        <source src="video/video-chuva.ogv" type="video/ogg"><!--4º tentativa-->
+        <p>Seu navegador não suporta os formatos de video.</p><!-- 5º mensagem de erro-->
+    </video>
+
+    <h2>Inserindo vídeos do YouTube</h2><!-- compartilhar do youtube-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uGhXeunMMX0"
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+     allowfullscreen></iframe>
+
+     <h2>Inserindo vídeos do Vimeo</h2><!--compartilhar do vimeo-->
+     <iframe src="https://player.vimeo.com/video/29315013?h=4a7399cc6d&title=0&byline=0&portrait=0"
+      width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+       allowfullscreen></iframe>
+</body>
+</html>

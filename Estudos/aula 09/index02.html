@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face { /*modo de importar uma font pelo CSS*/
+            font-family: 'Milk Honey';
+            src: url(fonts/Milky\ Honey.otf) format('opentype'), 
+            url(fonts/Milky\ Honey.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /*
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced
+                Typography)
+                - svg
+            */
+        }
+
+        h1{
+            font-family: 'Milk Honey', 'Times New Roman', Times, serif;
+            font-style: normal;
+        }
+        body{
+            font-family: 'Milk Honey';
+            font-style: normal;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est nostrum voluptas natus, cum eveniet excepturi in id, fugiat labore quia magni, blanditiis dolores? Amet ut voluptatibus unde mollitia perferendis quos.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur inventore voluptatum sapiente eligendi assumenda aperiam, delectus excepturi odit quod ipsam voluptas dolores fugit. Illum itaque culpa atque molestias, et debitis!</p>
+    
+</body>
+</html>
