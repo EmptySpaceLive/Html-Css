@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Meu Primeiro Formulario</h1>
+    <form action="cadastro.php" autocomplete="off"> <!-- autocomplete OFF p não sugerir textos nas caixas -->
+        <p><label for="nome">Nome:</label></p>
+        <!-- label sempre conecta na caixa usando o ID dela -->
+        <input type="text" name="nome" id="nome">
+        <p><label for="sobrenome">Sobrenome:</label></p>
+        <input type="text" name="sobrenome" id="sobrenome">
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+    
+</body>
+</html>
