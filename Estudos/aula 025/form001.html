@@ -8,7 +8,14 @@
 </head>
 <body>
     <h1>Meu Primeiro Formulario</h1>
-    <form action="cadastro.php" autocomplete="off"> <!-- autocomplete OFF p não sugerir textos nas caixas -->
+    <form action="cadastro.php" autocomplete="off" method="get"> 
+        <!-- METHOD - GET / POST -->
+        <!-- GET= 3.000 bytes limite -->
+        <!-- GET= URL pode ser compartilhada -->
+        <!-- GET= não usar para dados sinsiveis -->
+        <!-- POST= envio de arquivos -->
+        <!-- POST= dados nao vazam na URL -->
+        <!-- POST= +3.000 bytes de limite -->
         <p><label for="nome">Nome:</label></p>
         <!-- label sempre conecta na caixa usando o ID dela -->
         <input type="text" name="nome" id="nome">
