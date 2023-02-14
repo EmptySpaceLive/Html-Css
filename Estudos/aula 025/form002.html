@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.js" method="post">
+        <P>
+            <label for="usu">Usuário:</label>
+            <input type="text" name="sus" id="usu" required maxlength="20" size="15">
+            <!-- SIZE - TAMANHO DA CAIXA E QUANTIDADE DE CARACTERES VISIVEIS -->
+        </P>
+        <P>
+            <label for="pass">Senha:</label>
+            <input type="password" name="pass" id="pass" autocomplete="current-password"> 
+            <!-- AUTOCOMPLETE - SELECIONA O TIPO DE DADO QUE VAI SER SUJERIDO PARA O USUARIO -->
+            <!-- A TAG FORM PRECISA ESTAR COM AUTOCOMPLETE - ON - PARA FUNCIONAR -->
+        </P>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
