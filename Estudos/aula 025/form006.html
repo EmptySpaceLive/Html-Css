@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body> 
+    <h1>Exemplo de Formulario</h1>
+    <form action="#" method="post">
+
+        <p>
+            <label for="cor">Cor:</label> 
+            <input type="color" name="cor" id="cor">
+        </p>
+        <p>
+            <label for="satis">Nivel:</label>
+            <input type="range"  name="satis" id="satis" min="0" max="10">
+        </p> 
+        <p>
+            <label for="arqui">Foto de perfil:</label>
+            <input type="file" name="aqui" id="arqui">
+            <!-- USAR INPUT FILE SEMPRE COM METHOD POST -->
+        </p>
+        <input type="reset" >
+    </form>
+</body>
+</html>
