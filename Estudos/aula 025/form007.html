@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="#" method="post">
+        <p>
+            <label for="esta">Estado:</label>
+            <select name="prof" id="esta">
+                <option value="" selected disabled>-- Escolha --</option><!-- OPT USADA COMO PLACEHOLDER/DESABLED P/ NAO PODER SER SELECIONADA -->
+                <optgroup label="Região Sudeste "> <!-- AGRUPANDO AS OPÇÔES POR REGIAO COM UMA LABEL -->
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                <!-- OPÇÕES dentro de um OPTGROUP dentro de um SELECT -->
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </p> 
+        <p>
+            <label for="prof">Profissão:</label>
+            <input type="text" name="prof" list="listprof">
+            <!-- INPUT TEXT COM UMA LISTA DE SUGESTÃO -->
+            <datalist id="listprof"> <!-- ID PARA SER USADO NO INPUT -->
+                <option >Administrado</option>
+                <option >Contabilista</option>
+                <option >Desenvolvedor</option>
+                <option >Professor</option>
+            </datalist>
+        </p>
+        <P>
+            <label for="msg">Mensagem:</label><br>
+            <!-- TEXTAREA ESPAÇO PARA TEXTO COM PLACEHOLDER E RESIZE:NONE SE NECESSARIO -->
+            <textarea name="msg" id="msg" cols="60" rows="10" placeholder="Digite aqui o resumo." style="resize: none;"></textarea>
+        </P>
+        <input type="reset">
+    </form>
+</body>
+</html>
