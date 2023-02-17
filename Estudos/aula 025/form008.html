@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="#" method="post">
+
+        <p>
+            <label for="num1">Digite um Numero:</label>
+            <input type="number" name="num1" id="num1" oninput="isoma.innerHTML = Number(num1.value) + Number(num2.value) " >
+            
+        </p>
+        <p>
+            <label for="num2">Digite outro Numero:</label>
+            <input type="number" name="num2" id="num2" oninput="isoma.innerHTML = Number(num1.value) + Number(num2.value)">
+        </p>
+        <label for="isoma">O resultado da soma é:</label>
+        <!-- LABEL para o OUTPUT -->
+        <output name="soma" id="isoma">
+            0
+        </output>
+        <!-- OUTPUT usado para demostrar algum resultado -->
+    </form>
+    <p>
+        <form action="#" method="post">
+        <label for="numra">Numero:</label>
+        <input type="range" name="numra" id="numra" min="0" max="100" value="50" 
+        oninput="res.innerHTML = Number(numra.value)">
+        <!-- USANDO OUTPUT para mostrar valor dentro do INPUT RANGE -->
+        <output id="res">
+            50
+        </output>
+        <p><input type="reset"></p>
+        </form>
+    </p>
+    
+</body>
+</html>
