@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/* Mobile Firt */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-image: url(../imagens/back-phone.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+main {
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.842);
+    
+}
+
+main h1 {
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(39, 119, 151);
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.603);
+}
+
+main h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.568);
+    padding: 10px;
+}
+main h2::after{    
+    content: "Smartphone";
+    
+}
+
+main img{
+    margin: auto;
+}
+
+img#Phone {
+    display: block;
+}
+
+img#TV {
+    display: none;
+}
+
+img#PC {
+    display: none
+}
+
+img#Tablet {
+    display: none;
+}
+
+img#Print {
+    display: none;
+}

@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+/*  Todas as demais midias */
+
+/* Typical Device Breakpoints 
+
+Pequenas telas: até 600px
+Celular: 601px até 768px
+Tablet: 769px até 992px
+Desktop: 993px até 1200px
+Grandes Telas: acima de 1201px
+*/
+
+
+
+@media screen and (min-width: 769px) and (max-width:992px) { /* Tablet */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    main h1{
+        color: rgb(134, 134, 134);
+    }
+    main h2::after{
+        content: 'Tablet';
+    }
+    img#Phone {
+        display: none;
+    }
+    
+    img#TV {
+        display: none;
+    }
+    
+    img#PC {
+        display: none
+    }
+    
+    img#Tablet {
+        display: block;
+    }
+    
+    img#Print {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){ /* Desktop */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    main h1{
+        color: blueviolet;
+    }
+    main h2::after{
+        content: 'Desktop';
+    }
+    img#Phone {
+        display: none;
+    }
+    
+    img#TV {
+        display: none;
+    }
+    
+    img#PC {
+        display: block;
+    }
+    
+    img#Tablet {
+        display: none;
+    }
+    
+    img#Print {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1201px){ /* tv */
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main h1{
+        color: rgb(184, 92, 26);
+    }
+    main h2::after{
+        content: 'TV';
+    }
+    img#Phone {
+        display: none;
+    }
+    
+    img#TV {
+        display: block;
+    }
+    
+    img#PC {
+        display: none;
+    }
+    
+    img#Tablet {
+        display: none;
+    }
+    
+    img#Print {
+        display: none;
+    }
+    
+}
+
+@media print { /* Imprimir */
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main {
+        border: 2px solid black;
+    }
+    main h2::after{
+        content: 'Versão para Imprimir';
+    }
+
+    img#Phone {
+        display: none;
+    }
+    
+    img#TV {
+        display: none;
+    }
+    
+    img#PC {
+        display: none;
+    }
+    
+    img#Tablet {
+        display: none;
+    }
+    
+    img#Print {
+        display: block;
+    }
+
+}
